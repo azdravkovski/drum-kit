@@ -1,0 +1,85 @@
+html {
+	font-size: 10px;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.content:before {
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	background: url('http://cdn.wallpapersafari.com/21/47/JeEtBo.jpg') no-repeat bottom center fixed;
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.content {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.title {
+	padding-top: 20px;
+	color: #fff;
+	font-size: 3rem;
+	text-align: center;
+  font-variant: small-caps;
+	text-shadow: 0px 0px .5px rgba(0, 0, 0, 1);
+}
+
+.keys {
+	display: flex;
+	min-height: 400px;
+	/*vh unit makes resizing responsive*/
+	justify-content: center;
+	align-items: center;
+}
+
+.key {
+	border: .4rem solid #fff;
+	font-size: 1.5rem;
+	margin: 1rem;
+	padding: 1rem .5rem;
+	width: 10rem;
+	text-align: center;
+	text-shadow: 0 0 .5rem black;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	transition: all .07s ease;
+	/*a nifty way to add animation to buttons*/
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: #8b94fa;
+	box-shadow: 0 0 1rem #ffc600;
+	color: #8b94fa;
+}
+
+kbd {
+	display: block;
+	font-size: 4rem;
+}
+
+.sound {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	color: #fff;
+}
